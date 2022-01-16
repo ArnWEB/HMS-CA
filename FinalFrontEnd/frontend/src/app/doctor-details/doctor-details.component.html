@@ -1,0 +1,30 @@
+<h1>Doctor Details</h1>
+<form (ngSubmit)="onSub()" method="post">
+    <div class="form-group col-md-4">
+        <label for="inputState">Doctor Details</label>
+        <select id="inputState" class="form-control" id="visitedDoctor" [(ngModel)]="doc" name="name">
+            <option *ngFor="let d of docotordemo">{{d.name}}</option>
+        </select>
+    </div>
+    <div><button class="btn btn-primary">Submit</button></div>
+</form>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>field</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{outputdoc[0].name}}</td>
+            <td>{{outputdoc[0].age}}</td>
+            <td>{{outputdoc[0].gender}}</td>
+            <td>{{outputdoc[0].field}}</td>
+
+        </tr>
+
+    </tbody>
+</table>

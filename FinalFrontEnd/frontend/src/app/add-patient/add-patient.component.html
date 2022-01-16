@@ -1,0 +1,22 @@
+
+<h3>Create Patient</h3>
+<form (ngSubmit)="onSubmit()" method="post">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="patient.name" name="name">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Doctor Visited</label>
+        <select id="inputState" class="form-control"id="visitedDoctor" [(ngModel)]="patient.visitedDoctor" name="visitedDoctor">
+          <option selected>Choose...</option>
+          <option *ngFor="let patient of doctor">{{patient.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Date</label>
+        <input type="text" class="form-control" id="date" [(ngModel)]="patient.date" name="date">
+    </div>
+        <button class="btn btn-success">Submit</button>
+
+
+</form>

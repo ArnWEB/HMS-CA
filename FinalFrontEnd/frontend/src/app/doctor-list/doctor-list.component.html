@@ -1,0 +1,22 @@
+<h2>Doctors</h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>gender</th>
+    <th>field</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let doctor of doctors">
+            <td>{{doctor.name}}</td>
+            <td>{{doctor.age}}</td>
+            <td>{{doctor.gender}}</td>
+            <td>{{doctor.field}}</td>
+
+        </tr>
+
+    </tbody>
+    
+</table>
+

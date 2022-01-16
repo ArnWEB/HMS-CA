@@ -1,0 +1,19 @@
+<h2>Patient</h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Doctor Visited</th>
+        <th>Date</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let patient of patients">
+            <td>{{patient.name}}</td>
+            <td>{{patient.visitedDoctor}}</td>
+            <td>{{patient.date}}</td>
+
+        </tr>
+
+    </tbody>
+    
+</table>

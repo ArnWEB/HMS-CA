@@ -1,0 +1,25 @@
+<h1>Patients details</h1>
+<form (ngSubmit)="onClick()" method="post" class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" [(ngModel)]="paitentdemo.id" name="id"aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <table class="table table-stripped">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Doctor Visited</th>
+        <th>Date</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{paitentdemo.name}}</td>
+            <td>{{paitentdemo.visitedDoctor}}</td>
+            <td>{{paitentdemo.date}}</td>
+
+        </tr>
+
+    </tbody>
+    <h1>{{Error}}</h1>
+    
+</table>
+
